@@ -3,9 +3,9 @@ const FetchData = async (url) => {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'f44a4aabfc5992514d262d7f517327e7',
-      StoreID: '4',
-      UserAddressID: '60877',
+      Authorization: process.env.REACT_APP_API_KEY,
+      StoreID: process.env.REACT_APP_STORE_ID,
+      UserAddressID: process.env.REACT_APP_USER_ADDRESS_ID,
     },
   });
 
