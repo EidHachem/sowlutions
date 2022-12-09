@@ -33,7 +33,7 @@ const NewProducts = () => {
           />
           <div className={classes.body}>
             <h3 className={classes.title}>{product.title}</h3>
-            <p className={classes.price}>{product.price}</p>
+            <p className={classes.price}>Price: {parseInt(product.price)}</p>
           </div>
         </div>
       ))}
