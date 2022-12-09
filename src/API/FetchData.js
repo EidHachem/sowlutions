@@ -1,5 +1,4 @@
-const FetchData = async () => {
-  const url = 'https://api.manoapp.com/api/v1/users/products/whats_new';
+const FetchData = async (url) => {
   const respponse = await fetch(url, {
     method: 'GET',
     headers: {
@@ -11,7 +10,7 @@ const FetchData = async () => {
   });
 
   const data = await respponse.json();
-  return data;
+  return data.data;
 };
 
 export default FetchData;
